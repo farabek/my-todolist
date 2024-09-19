@@ -1,11 +1,9 @@
-type ButtonPropsType = {
-	title: string
-	onClick?:()=> void
-	className?: string
-}
+import React from 'react';
 
-export const Button = ({title, onClick, className}: ButtonPropsType) => {
-	return (
-		<button className={className} onClick={onClick}>{title}</button>
-	)
-}
+type ButtonProps = {
+  title: string;
+};
+
+export const Button = ({ title }: ButtonProps) => {
+  return <button>{title}</button>;
+};
